@@ -1,0 +1,52 @@
+.rc-modal-container {
+  position: fixed;
+  place-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #000000b0;
+  display: none;
+  pointer-events: none;
+}
+.rc-modal-container-visible {
+  display: grid;
+  pointer-events: all;
+}
+
+.rc-modal {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 80%;
+  max-width: 360px;
+}
+.rc-modal-heading {
+  font-weight: 800;
+  font-size: 1.7rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.rc-modal-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.rc-btns-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.rc-btn-confirm {
+  background-color: black;
+  padding: 0.5rem 0.7rem;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+}
+.rc-btn-cancel {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid black;
+}
